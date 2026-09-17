@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nocturnal Lab - Catálogo</title>
+</head>
+<body>
+    <header>
+        <a href="./index.html">
+      <img src="./recursos/imagenes/bat_icon.png" alt="Logo Nocturnal Lab" width="150">
+    </a>
+    <nav>
+      <a href="./index.html">Inicio</a>
+      <a href="./catalogo.html">Catálogo</a>
+      <a href="./carrito.html">Carrito</a>
+      <a href="./contacto.html">Contacto</a>
+    </nav>
+    </header>
+
+
+    <main>
+        <h1>Catálogo</h1>
+        <h2>Productos</h2>
+        <label for="id-categoria">Categoría</label>
+        <select name="categoria" id="id-categoria">
+            <option value="todas">Todas</option>
+            <option value="remeras">Remeras</option>
+            <option value="camperas">Camperas</option>
+            <option value="accesorios">Accesorios</option>
+            <option value="polleras">Polleras</option>
+        </select>
+
+
+        <label for="id-precio">Precio</label>
+        <select name="precio" id="id-precio">
+            <option value="todos">Todos</option>
+            <option value="menor">Hasta $25.000</option>
+            <option value="medio">$25.000 a $35.000</option>
+            <option value="mayor">Más de $35.000</option>
+        </select>
+
+
+        <label for="id-talle">Talle</label>
+        <select name="talle" id="id-talle">
+            <option value="todos">Todos</option>
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+        </select>
+
+
+        <table>
+            <tr>
+                <td>
+                    <img src="./recursos/imagenes/remeragoth.jpg" alt="Remera gótica estampada" width="200">
+                    <h3>Remera Gótica Estampada</h3>
+                    <p>Precio: $25.000</p>
+                    <p>Categoría: Remeras</p>
+                    <a href="./carrito.html">Agregar al carrito</a>
+                </td>
+
+
+                <td>
+                    <img src="./recursos/imagenes/pollera.jpg" alt="Pollera victoriana" width="200">
+                    <h3>Pollera Victoriana</h3>
+                    <p>Precio: $37.000</p>
+                    <p>Categoría: Polleras</p>
+                    <a href="./carrito.html">Agregar al carrito</a>
+                </td>
+
+
+                <td>
+                    <img src="./recursos/imagenes/collar.jpg" alt="Collar de acero unisex" width="200">
+                    <h3>Collar de acero unisex</h3>
+                    <p>Precio: $18.000</p>
+                    <p>Categoría: Accesorios</p>
+                    <a href="./carrito.html">Agregar al carrito</a>
+                </td>
+            </tr>
+        </table>
+    </main>
+
+
+    <footer>
+        <h2>Por acá nos encontras!</h2>
+        <ul>
+            <li><a href="https://instagram.com/@nocturnallab" target="_blank">Instagram: @nocturnallab</a></li>
+            <li>Córdoba, Argentina</li>
+        </ul>
+        <p>© 2026 Nocturnal Lab</p>
+  </footer>
+</body>
+</html>
