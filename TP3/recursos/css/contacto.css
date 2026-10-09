@@ -1,0 +1,60 @@
+.contenido-principal > h1 {
+    color: #a78bfa;
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #3b2a52;
+    padding-bottom: 5px;
+}
+
+.contenido-principal > h2 {
+    color: #f1edfa;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Formulario */
+form {
+    background-color: #1c1527;
+    border: 1px solid #3b2a52;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+form label {
+    color: #b3a5cc;
+    font-size: 0.95rem;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: #261c35;
+    border: 1px solid #3b2a52;
+    border-radius: 5px;
+    color: #f1edfa;
+    font-family: inherit;
+}
+
+form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+form button {
+    align-self: flex-start;
+    margin-top: 10px;
+}
+
+/* Mapa */
+iframe {
+    width: 100% !important;
+    max-width: 100%;
+    height: 350px;
+    border-radius: 8px;
+    border: 1px solid #3b2a52 !important;
+}
