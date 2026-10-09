@@ -1,0 +1,134 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+
+body {
+    background-color: #110c18;
+    color: #f1edfa;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: #b3a5cc;
+}
+
+/* Cabecera principal */
+.cabecera-principal {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: #1c1527;
+    padding: 15px;
+    border-bottom: 2px solid #3b2a52;
+    z-index: 10;
+}
+
+.cabecera-principal a img {
+    width: 50px;
+    height: auto;
+    display: block;
+}
+
+.cabecera-principal nav {
+    display: flex;
+    gap: 15px;
+}
+
+.cabecera-principal nav a {
+    color: #b3a5cc;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+.cabecera-principal nav a:hover {
+    color: #a78bfa;
+    border-bottom: 2px solid #a78bfa;
+}
+
+/* Contenido principal */
+.contenido-principal {
+    flex: 1;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Botones */
+button {
+    background-color: #7c3aed;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #6d28d9;
+}
+
+/* Pie principal */
+.pie-principal {
+    background-color: #1c1527;
+    border-top: 2px solid #3b2a52;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+}
+
+.pie-principal h2 {
+    color: #a78bfa;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.pie-principal ul {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.pie-principal ul li {
+    color: #b3a5cc;
+}
+
+.pie-principal ul li a {
+    color: #b3a5cc;
+}
+
+.pie-principal ul li a:hover {
+    color: #a78bfa;
+}
+
+/* Media Query de la clase para escritorio */
+@media (width > 600px) {
+    .cabecera-principal {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 40px;
+    }
+}

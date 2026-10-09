@@ -1,0 +1,82 @@
+/* Títulos de Inicio */
+.contenido-principal > h1 {
+    color: #a78bfa;
+    font-size: 2.2rem;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.contenido-principal > h2 {
+    color: #b3a5cc;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+/* Secciones */
+.sobre-marca,
+.productos-destacados {
+    background-color: #1c1527;
+    border: 1px solid #3b2a52;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.sobre-marca h2,
+.productos-destacados h2 {
+    color: #f1edfa;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #3b2a52;
+    padding-bottom: 5px;
+}
+
+.sobre-marca p {
+    color: #b3a5cc;
+    line-height: 1.6;
+}
+
+/* Tabla de productos*/
+.productos-destacados table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.productos-destacados table tr {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.productos-destacados table td {
+    background-color: #261c35;
+    border: 1px solid #3b2a52;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+}
+
+.productos-destacados table td img {
+    border-radius: 5px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.productos-destacados table td p {
+    color: #a78bfa;
+    font-weight: bold;
+}
+
+/* Escritorio */
+@media (width > 600px) {
+    .productos-destacados table tr {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .productos-destacados table td {
+        width: 31%;
+    }
+}
