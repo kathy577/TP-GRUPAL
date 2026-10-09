@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./recursos/css/base.css">
+    <link rel="stylesheet" href="./recursos/css/catalogo.css">
     <title>Nocturnal Lab - Catálogo</title>
 </head>
 <body>
-    <header>
+    <header class="cabecera-principal">
         <a href="./index.html">
       <img src="./recursos/imagenes/bat_icon.png" alt="Logo Nocturnal Lab" width="150">
     </a>
@@ -18,71 +20,70 @@
     </nav>
     </header>
 
-
-    <main>
+    <main class="contenido-principal">
         <h1>Catálogo</h1>
         <h2>Productos</h2>
-        <label for="id-categoria">Categoría</label>
-        <select name="categoria" id="id-categoria">
-            <option value="todas">Todas</option>
-            <option value="remeras">Remeras</option>
-            <option value="camperas">Camperas</option>
-            <option value="accesorios">Accesorios</option>
-            <option value="polleras">Polleras</option>
-        </select>
 
+        <form class="filtros-catalogo" action="#" method="get">
+            <label for="id-categoria">Categoría</label>
+            <select name="categoria" id="id-categoria">
+                <option value="todas">Todas</option>
+                <option value="remeras">Remeras</option>
+                <option value="camperas">Camperas</option>
+                <option value="accesorios">Accesorios</option>
+                <option value="polleras">Polleras</option>
+            </select>
 
-        <label for="id-precio">Precio</label>
-        <select name="precio" id="id-precio">
-            <option value="todos">Todos</option>
-            <option value="menor">Hasta $25.000</option>
-            <option value="medio">$25.000 a $35.000</option>
-            <option value="mayor">Más de $35.000</option>
-        </select>
+            <label for="id-precio">Precio</label>
+            <select name="precio" id="id-precio">
+                <option value="todos">Todos</option>
+                <option value="menor">Hasta $25.000</option>
+                <option value="medio">$25.000 a $35.000</option>
+                <option value="mayor">Más de $35.000</option>
+            </select>
 
+            <label for="id-talle">Talle</label>
+            <select name="talle" id="id-talle">
+                <option value="todos">Todos</option>
+                <option value="s">S</option>
+                <option value="m">M</option>
+                <option value="l">L</option>
+            </select>
 
-        <label for="id-talle">Talle</label>
-        <select name="talle" id="id-talle">
-            <option value="todos">Todos</option>
-            <option value="s">S</option>
-            <option value="m">M</option>
-            <option value="l">L</option>
-        </select>
+            <button type="submit">Filtrar</button>
+        </form>
 
+        <section class="productos" aria-label="Productos">
+            <article class="producto">
+                <img src="./recursos/imagenes/remeragoth.jpg"
+                    alt="Remera gótica estampada" width="200">
+                <h3>Remera Gótica Estampada</h3>
+                <p>Precio: $25.000</p>
+                <p>Categoría: Remeras</p>
+                <a href="./carrito.html">Agregar al carrito</a>
+            </article>
 
-        <table>
-            <tr>
-                <td>
-                    <img src="./recursos/imagenes/remeragoth.jpg" alt="Remera gótica estampada" width="200">
-                    <h3>Remera Gótica Estampada</h3>
-                    <p>Precio: $25.000</p>
-                    <p>Categoría: Remeras</p>
-                    <a href="./carrito.html">Agregar al carrito</a>
-                </td>
+            <article class="producto">
+                <img src="./recursos/imagenes/pollera.jpg"
+                    alt="Pollera victoriana" width="200">
+                <h3>Pollera Victoriana</h3>
+                <p>Precio: $37.000</p>
+                <p>Categoría: Polleras</p>
+                <a href="./carrito.html">Agregar al carrito</a>
+            </article>
 
-
-                <td>
-                    <img src="./recursos/imagenes/pollera.jpg" alt="Pollera victoriana" width="200">
-                    <h3>Pollera Victoriana</h3>
-                    <p>Precio: $37.000</p>
-                    <p>Categoría: Polleras</p>
-                    <a href="./carrito.html">Agregar al carrito</a>
-                </td>
-
-
-                <td>
-                    <img src="./recursos/imagenes/collar.jpg" alt="Collar de acero unisex" width="200">
-                    <h3>Collar de acero unisex</h3>
-                    <p>Precio: $18.000</p>
-                    <p>Categoría: Accesorios</p>
-                    <a href="./carrito.html">Agregar al carrito</a>
-                </td>
-            </tr>
-        </table>
+            <article class="producto">
+                <img src="./recursos/imagenes/collar.jpg"
+                    alt="Collar de acero unisex" width="200">
+                <h3>Collar de acero unisex</h3>
+                <p>Precio: $18.000</p>
+                <p>Categoría: Accesorios</p>
+                <a href="./carrito.html">Agregar al carrito</a>
+            </article>
+        </section>
     </main>
 
-
-    <footer>
+    <footer class="pie-principal">
         <h2>Por acá nos encontras!</h2>
         <ul>
             <li><a href="https://instagram.com/@nocturnallab" target="_blank">Instagram: @nocturnallab</a></li>
