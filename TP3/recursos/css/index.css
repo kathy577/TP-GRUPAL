@@ -1,7 +1,7 @@
-/* Títulos de Inicio */
+/* Títulos */
 .contenido-principal > h1 {
     color: #a78bfa;
-    font-size: 2.2rem;
+    font-size: 2.4rem;
     text-align: center;
     margin-top: 10px;
 }
@@ -14,42 +14,51 @@
     margin-bottom: 25px;
 }
 
-/* Secciones */
-.sobre-marca,
-.productos-destacados {
+/*Sobre la marca*/
+.sobre-marca {
     background-color: #1c1527;
     border: 1px solid #3b2a52;
     border-radius: 8px;
     padding: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
-.sobre-marca h2,
-.productos-destacados h2 {
+.sobre-marca h2 {
     color: #f1edfa;
-    margin-bottom: 15px;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
     border-bottom: 1px solid #3b2a52;
-    padding-bottom: 5px;
+    padding-bottom: 8px;
 }
 
 .sobre-marca p {
     color: #b3a5cc;
     line-height: 1.6;
+    font-size: 1rem;
 }
 
-/* Tabla de productos*/
-.productos-destacados table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.productos-destacados table tr {
+/*Productos destacados */
+.productos-destacados {
+    background-color: #1c1527;
+    border: 1px solid #3b2a52;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.productos-destacados table td {
+.productos-destacados h2 {
+    color: #f1edfa;
+    font-size: 1.4rem;
+    border-bottom: 1px solid #3b2a52;
+    padding-bottom: 8px;
+    margin-bottom: 5px;
+}
+
+/* Producto */
+.producto {
     background-color: #261c35;
     border: 1px solid #3b2a52;
     border-radius: 8px;
@@ -57,26 +66,32 @@
     text-align: center;
 }
 
-.productos-destacados table td img {
+.producto img {
     border-radius: 5px;
     max-width: 100%;
     height: auto;
     margin-bottom: 10px;
 }
 
-.productos-destacados table td p {
+.producto p {
     color: #a78bfa;
     font-weight: bold;
 }
 
-/* Escritorio */
-@media (width > 600px) {
-    .productos-destacados table tr {
+/*Escritorio*/
+@media (min-width: 600px) {
+    .productos-destacados {
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-between;
     }
 
-    .productos-destacados table td {
-        width: 31%;
+    .productos-destacados h2 {
+        width: 100%; /* Mantiene el título arriba ocupando todo el ancho */
+    }
+
+    .producto {
+        width: 31%; /* Muestra los 3 productos uno al lado del otro */
+        box-sizing: border-box;
     }
 }
