@@ -1,0 +1,114 @@
+/* Título y subtítulo */
+.contenido-principal > h1 {
+    color: #a78bfa;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #3b2a52;
+    padding-bottom: 5px;
+}
+
+.contenido-principal > h2 {
+    color: #f1edfa;
+    font-size: 1.3rem;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+/* Formulario de filtros */
+.filtros-catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.filtros-catalogo label {
+    color: #b3a5cc;
+    font-size: 0.95rem;
+}
+
+.filtros-catalogo select {
+    background-color: #261c35;
+    border: 1px solid #3b2a52;
+    color: #f1edfa;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.filtros-catalogo button {
+    background-color: #7c3aed;
+    border: 0;
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 8px 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.filtros-catalogo button:hover {
+    background-color: #6d28d9;
+}
+
+/* Productos */
+.productos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.producto {
+    background-color: #1c1527;
+    border: 1px solid #3b2a52;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.producto img {
+    border-radius: 5px;
+    max-width: 100%;
+    height: auto;
+}
+
+.producto h3 {
+    color: #f1edfa;
+    font-size: 1.1rem;
+}
+
+.producto p {
+    color: #b3a5cc;
+    font-size: 0.95rem;
+}
+
+.producto a {
+    display: inline-block;
+    background-color: #7c3aed;
+    color: #ffffff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 5px;
+    text-decoration: none;
+}
+
+.producto a:hover {
+    background-color: #6d28d9;
+}
+
+/* Productos en columnas en pantallas más anchas */
+@media (width > 600px) {
+    .productos {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .producto {
+        width: 31%;
+    }
+}

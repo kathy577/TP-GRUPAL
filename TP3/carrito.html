@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nocturnal Lab - Carrito  </title>
+    <link rel="stylesheet" href="./recursos/css/base.css">
+    <link rel="stylesheet" href="./recursos/css/carrito.css">
+    <title>Nocturnal Lab - Carrito</title>
 </head>
 <body>
-    <header>
+    <header class="cabecera-principal">
         <a href="./index.html">
             <img src="./recursos/imagenes/bat_icon.png" alt="Logo Nocturnal Lab" width="50">
         </a>
@@ -19,63 +21,53 @@
     </header>
 
 
-    <main>
+    <main class="contenido-principal">
         <h1>Carrito de compra</h1>
         <h2>Resumen de compra</h2>
-        <table>
-            <tr>
-                <th>Producto</th>
-                <th>Precio</th>
-                <th>Cantidad</th>
-                <th>Total</th>
-            </tr>
+       
+        <section class="resumen-carrito" aria-label="Productos del carrito">
+            <article class="item-carrito">
+                <h3>Remera Gótica Estampada</h3>
+                <p>Precio: $25.000</p>
+                <p>Cantidad: 1</p>
+                <p>Total: $25.000</p>
+            </article>
 
+            <article class="item-carrito">
+                <h3>Pollera Victoriana</h3>
+                <p>Precio: $37.000</p>
+                <p>Cantidad: 1</p>
+                <p>Total: $37.000</p>
+            </article>
 
-            <tr>
-                <td>Remera Gótica Estampada</td>
-                <td>$25.000</td>
-                <td>1</td>
-                <td>$25.000</td>
-            </tr>
+            <article class="item-carrito">
+                <h3>Collar de acero unisex</h3>
+                <p>Precio: $18.000</p>
+                <p>Cantidad: 1</p>
+                <p>Total: $18.000</p>
+            </article>
+        </section>
 
+        <form class="formulario-compra" action="#" method="post">
+            <h2>Envío</h2>
 
-            <tr>
-                <td>Pollera Victoriana</td>
-                <td>$37.000</td>
-                <td>1</td>
-                <td>$37.000</td>
-            </tr>
+            <label for="id-envio">Seleccionar envío</label>
+            <select name="envio" id="id-envio">
+                <option value="retiro">Retiro en Córdoba - Gratis</option>
+                <option value="envio">Envío a domicilio - $5.000</option>
+            </select>
 
+            <h2>Total de compra</h2>
+            <p>Subtotal: $80.000</p>
+            <p>Envío: $5.000</p>
+            <p class="total-final">Total: $85.000</p>
 
-            <tr>
-                <td>Collar de acero unisex</td>
-                <td>$18.000</td>
-                <td>1</td>
-                <td>$18.000</td>
-            </tr>
-        </table>
-
-
-        <h2>Envío</h2>
-        <label for="id-envio">Seleccionar envío</label>
-        <select name="envio" id="id-envio">
-            <option value="retiro">Retiro en Córdoba - Gratis</option>
-            <option value="envio">Envío a domicilio - $5.000</option>
-        </select>
-
-
-        <h2>Total de compra</h2>
-        <p>Subtotal: $80.000</p>
-        <p>Envío: $5.000</p>
-        <p>Total: $85.000</p>
-
-
-        <h2>Confirmar pedido</h2>
-        <button type="submit">Confirmar compra</button>
+            <h2>Confirmar pedido</h2>
+            <button type="submit">Confirmar compra</button>
+        </form>
   </main>
 
-
-  <footer>
+  <footer class="pie-pagina">
     <h2>Por acá nos encuentras!</h2>
     <ul>
       <li><a href="https://instagram.com/@nocturnallab" target="_blank">Instagram: @nocturnallab</a></li>

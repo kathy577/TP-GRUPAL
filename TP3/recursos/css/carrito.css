@@ -1,0 +1,86 @@
+/* Título y subtítulos */
+.contenido-principal > h1 {
+    color: #a78bfa;
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #3b2a52;
+    padding-bottom: 5px;
+}
+
+.contenido-principal > h2 {
+    color: #f1edfa;
+    font-size: 1.3rem;
+    margin-top: 25px;
+    margin-bottom: 12px;
+}
+
+/* Productos del carrito */
+.resumen-carrito {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.item-carrito {
+    background-color: #1c1527;
+    border: 1px solid #3b2a52;
+    border-radius: 8px;
+    padding: 12px 15px;
+}
+
+.item-carrito h3 {
+    color: #a78bfa;
+    margin-top: 0;
+}
+
+.item-carrito p {
+    color: #b3a5cc;
+    margin-bottom: 5px;
+}
+
+/* Selección del envío */
+.formulario-compra label[for="id-envio"] {
+    display: block;
+    color: #b3a5cc;
+    margin-bottom: 5px;
+}
+
+.formulario-compra select#id-envio {
+    width: 100%;
+    max-width: 400px;
+    background-color: #261c35;
+    border: 1px solid #3b2a52;
+    color: #f1edfa;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Totales de compra */
+.formulario-compra p {
+    color: #b3a5cc;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.formulario-compra p.total-final {
+    color: #a78bfa;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Botón para confirmar la compra */
+.formulario-compra button[type="submit"] {
+    background-color: #10b981;
+    color: #ffffff;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px 16px;
+    font-size: 1rem;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.formulario-compra button[type="submit"]:hover {
+    background-color: #059669;
+}
