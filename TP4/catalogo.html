@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./recursos/css/base.css">
+    <link rel="stylesheet" href="./recursos/css/catalogo.css">
+    <script type="module" src="./recursos/js/index.js"></script>
+    <title>Nocturnal Lab - Catálogo</title>
+</head>
+<body>
+    <header class="cabecera-principal">
+        <a class="logo-marca" href="./index.html">
+        <img src="./recursos/imagenes/bat_icon.png" alt="Logo Nocturnal Lab">
+    </a>
+    <nav>
+      <a href="./index.html">Inicio</a>
+      <a href="./catalogo.html">Catálogo</a>
+      <a href="./carrito.html">Carrito</a>
+      <a href="./contacto.html">Contacto</a>
+    </nav>
+    </header>
+
+    <main class="contenido-principal">
+        <h1>Catálogo</h1>
+        <h2>Productos</h2>
+
+        <form class="filtros-catalogo" id="form-filtros" action="#" method="get">
+            <label for="id-categoria">Categoría</label>
+            <select name="categoria" id="id-categoria">
+                <option value="todas">Todas</option>
+                <option value="remeras">Remeras</option>
+                <option value="accesorios">Accesorios</option>
+                <option value="polleras">Polleras</option>
+            </select>
+
+            <label for="id-precio">Precio</label>
+            <select name="precio" id="id-precio">
+                <option value="todos">Todos</option>
+                <option value="menor">Hasta $25.000</option>
+                <option value="medio">$25.000 a $35.000</option>
+                <option value="mayor">Más de $35.000</option>
+            </select>
+
+            <label for="id-talle">Talle</label>
+            <select name="talle" id="id-talle">
+                <option value="todos">Todos</option>
+                <option value="s">S</option>
+                <option value="m">M</option>
+                <option value="l">L</option>
+            </select>
+
+            <button type="submit">Filtrar</button>
+        </form>
+        <section
+            class="productos"
+            id="contenedor-productos"
+            aria-label="Productos">
+        </section>
+    </main>
+
+    

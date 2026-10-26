@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&family=Pirata+One&display=swap'); 
+/* Reset */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: "Pirata One", system-ui;
+    font-size: 16px;
+}
+
+body {
+    background-color: #110c18;
+    color: #f1edfa;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: #b3a5cc;
+}
+
+/* Cabecera principal */
+.cabecera-principal {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: #1c1527;
+    padding: 15px;
+    border-bottom: 2px solid #3b2a52;
+    z-index: 10;
+}
+
+.cabecera-principal a img {
+    width: 50px;
+    height: auto;
+    display: block;
+}
+
+.cabecera-principal nav {
+    display: flex;
+    gap: 70px;
+}
+
+.cabecera-principal nav a {
+    display: inline-block;
+    color: #110c18;
+    font-weight: bold;
+    font-size: 1.4rem;
+    padding: 8px 30px;
+    background:
+        radial-gradient(circle at 0 0, transparent 12px, #9279ad 12.5px) top left / 51% 51%,
+        radial-gradient(circle at 100% 0, transparent 12px, #9279ad 12.5px) top right / 51% 51%,
+        radial-gradient(circle at 0 100%, transparent 12px, #9279ad 12.5px) bottom left / 51% 51%,
+        radial-gradient(circle at 100% 100%, transparent 12px, #9279ad 12.5px) bottom right / 51% 51%;
+    background-repeat: no-repeat;
+}
+
+.cabecera-principal nav a:hover {
+    color: #322447;
+    background:
+        radial-gradient(circle at 0 0, transparent 12px, #a78bfa 12.5px) top left / 51% 51%,
+        radial-gradient(circle at 100% 0, transparent 12px, #a78bfa 12.5px) top right / 51% 51%,
+        radial-gradient(circle at 0 100%, transparent 12px, #a78bfa 12.5px) bottom left / 51% 51%,
+        radial-gradient(circle at 100% 100%, transparent 12px, #a78bfa 12.5px) bottom right / 51% 51%;
+    background-repeat: no-repeat;
+}
+
+.cabecera-principal .logo-marca {
+    display: flex;
+    width: 100px;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+    background:
+        radial-gradient(circle at 0 0, transparent 12px, #4b3561 12.5px) top left / 51% 51%,
+        radial-gradient(circle at 100% 0, transparent 12px, #4b3561 12.5px) top right / 51% 51%,
+        radial-gradient(circle at 0 100%, transparent 12px, #4b3561 12.5px) bottom left / 51% 51%,
+        radial-gradient(circle at 100% 100%, transparent 12px, #4b3561 12.5px) bottom right / 51% 51%;
+    background-repeat: no-repeat;
+}
+
+.cabecera-principal .logo-marca img {
+    width: 100px;
+    max-height: 58px;
+    object-fit: contain;
+}
+
+/* Contenido principal */
+.contenido-principal {
+    flex: 1;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Botones */
+button {
+    background-color: #7c3aed;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #6d28d9;
+}
+
+/* Pie principal */
+.pie-principal {
+    background-color: #1c1527;
+    border-top: 2px solid #3b2a52;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+}
+
+.pie-principal h2 {
+    color: #a78bfa;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.pie-principal ul {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.pie-principal ul li {
+    color: #b3a5cc;
+}
+
+.pie-principal ul li a {
+    color: #b3a5cc;
+}
+
+.pie-principal ul li a:hover {
+    color: #a78bfa;
+}
+
+/* Media Query de la clase para escritorio */
+@media (width > 600px) {
+    .cabecera-principal {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 40px;
+    }
+
+    .cabecera-principal nav {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
