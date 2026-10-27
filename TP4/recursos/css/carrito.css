@@ -1,0 +1,97 @@
+/* Título y subtítulos */
+.contenido-principal > h1 {
+    color: #a78bfa;
+    font-size: 2.2rem;
+    margin-bottom: 20px; /* Coreccion */
+    border-bottom: 1px solid #3b2a52;
+    padding-bottom: 8px;
+}
+
+.contenido-principal > h2 {
+    color: #f1edfa;
+    font-size: 1.3rem;
+    margin-top: 35px; /* Correcion */
+    margin-bottom: 15px;
+}
+
+/* Productos del carrito */
+.resumen-carrito {
+    display: flex;
+    flex-direction: column;
+    gap: 18px; /* Correcion */
+}
+
+.item-carrito {
+    background-color: #1c1527;
+    border: 1px solid #3b2a52;
+    border-radius: 8px;
+    padding: 18px 20px; /* Correcion */
+}
+
+.item-carrito h3 {
+    color: #a78bfa;
+    margin-top: 0;
+    margin-bottom: 10px; /* Correcion */
+}
+
+.item-carrito p {
+    color: #b3a5cc;
+    margin-bottom: 8px; /* Correcion */
+}
+
+/* Selección del envío */
+.formulario-compra {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Correcion */
+}
+
+.formulario-compra label[for="id-envio"] {
+    display: block;
+    color: #b3a5cc;
+    margin-bottom: 8px;
+    margin-top: 15px; /* Correcion */
+}
+
+.formulario-compra select#id-envio {
+    width: 100%;
+    max-width: 400px;
+    background-color: #261c35;
+    border: 1px solid #3b2a52;
+    color: #f1edfa;
+    padding: 12px; /* Coreccion */
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Totales de compra */
+.formulario-compra p {
+    color: #b3a5cc;
+    font-size: 1.1rem;
+    margin-bottom: 8px; /* Correccion */
+}
+
+.formulario-compra p.total-final {
+    color: #a78bfa;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 15px; /* Correcion */
+    margin-bottom: 20px;
+}
+
+/* Botón para confirmar la compra */
+.formulario-compra button[type="submit"] {
+    background-color: #10b981;
+    color: #ffffff;
+    border: 0;
+    border-radius: 5px;
+    padding: 12px 20px; /* Correcion */
+    font-size: 1rem;
+    margin-top: 10px; /* Correcion */
+    cursor: pointer;
+    width: fit-content; /* Correcion */
+}
+
+.formulario-compra button[type="submit"]:hover {
+    background-color: #059669;
+}
