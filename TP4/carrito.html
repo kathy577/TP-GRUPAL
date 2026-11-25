@@ -25,28 +25,7 @@
         <h1>Carrito de compra</h1>
         <h2>Resumen de compra</h2>
        
-        <section class="resumen-carrito" aria-label="Productos del carrito">
-            <article class="item-carrito">
-                <h3>Remera Gótica Estampada</h3>
-                <p>Precio: $25.000</p>
-                <p>Cantidad: 1</p>
-                <p>Total: $25.000</p>
-            </article>
-
-            <article class="item-carrito">
-                <h3>Pollera Victoriana</h3>
-                <p>Precio: $37.000</p>
-                <p>Cantidad: 1</p>
-                <p>Total: $37.000</p>
-            </article>
-
-            <article class="item-carrito">
-                <h3>Collar de acero unisex</h3>
-                <p>Precio: $18.000</p>
-                <p>Cantidad: 1</p>
-                <p>Total: $18.000</p>
-            </article>
-        </section>
+        <section class="resumen-carrito" id="contenedor-carrito" aria-label="Productos del carrito"></section>
 
         <form id="form-carrito" class="formulario-compra" action="#" method="post">
             <h2>Envío</h2>
@@ -58,9 +37,9 @@
             </select>
 
             <h2>Total de compra</h2>
-            <p>Subtotal: $80.000</p>
-            <p>Envío: $5.000</p>
-            <p class="total-final">Total: $85.000</p>
+            <p id="subtotal-carrito">Subtotal: $80.000</p>
+            <p id="envio-carrito">Envío: $5.000</p>
+            <p class="total-final" id="total-carrito">Total: $85.000</p>
 
             <h2>Confirmar pedido</h2>
             <button type="submit">Confirmar compra</button>

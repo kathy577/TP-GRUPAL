@@ -56,7 +56,7 @@
 /* Productos */
 .productos {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     gap: 20px;
 }
 
@@ -106,12 +106,6 @@
 /* Productos en columnas en pantallas más anchas */
 @media (width > 600px) {
     .productos {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .producto {
-        width: 100%;
-        box-sizing: border-box;
+        grid-template-columns: repeat(3, 1fr);
     }
 }
